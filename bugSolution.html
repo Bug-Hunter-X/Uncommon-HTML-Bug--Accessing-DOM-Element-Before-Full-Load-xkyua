@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv"></div>
+  <script>
+    //Ensuring that the DOM element exists before accessing it.
+    document.addEventListener('DOMContentLoaded', function() {
+      document.getElementById("myDiv").setAttribute("style","background-color:red");
+    });
+  </script>
+</body>
+</html>
