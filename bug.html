@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv"></div>
+  <script>
+    //Attempting to access a non-existent property of an element before it's fully created.
+    document.getElementById("myDiv").setAttribute("style","background-color:red");
+    //This can cause unexpected errors in older browsers or unpredictable behavior in some cases
+  </script>
+</body>
+</html>
